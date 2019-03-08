@@ -4,7 +4,7 @@ const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
 const activities_list = [
     "Looking at the queue",
-	`${playlist.title}`
+	`${song.title}`
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 
 bot.on('ready', () => {
