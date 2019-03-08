@@ -192,7 +192,7 @@ function play(guild, song) {
 }
 const activities_list = [
     "Looking at the queue",
-	`${song.title}`
+	`${serverQueue.songs[0].title}`
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 
 bot.on('ready', () => {
