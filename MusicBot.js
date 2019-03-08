@@ -190,16 +190,4 @@ function play(guild, song) {
 
 	serverQueue.textChannel.send(`🎶 Start playing: **${song.title}**`);
 }
-const activities_list = [
-    "Looking at the queue",
-	`${serverQueue.songs[0].title}`
-    ]; // creates an arraylist containing phrases you want your bot to switch through.
-
-bot.on('ready', () => {
-    setInterval(() => {
-        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
-        bot.user.setActivity(activities_list[index]); // sets bot's activities to one of the phrases in the arraylist.
-    }, 10000); // Runs this every 10 seconds.
-});
-
 client.login(process.env.BOT_TOKEN);
